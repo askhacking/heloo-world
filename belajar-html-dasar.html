@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Media belajar tag dasar HTML." />
+    <title>Belajar Tag Dasar HTML</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body { background: #f7f9fc; color: #1f2937; }
+      .hero { background: linear-gradient(135deg, #071a36, #0b5ed7); }
+      .topic-card { border: 0; box-shadow: 0 .5rem 1.5rem rgba(16, 38, 72, .08); }
+      pre { margin: 0; padding: 1rem; overflow-x: auto; border-radius: .5rem; background: #172033; color: #e5efff; }
+      code { color: inherit; }
+      .example-box { border-left: 4px solid #0d6efd; background: #f8fbff; }
+      .tag { color: #0d6efd; font-family: var(--bs-font-monospace); }
+    </style>
+  </head>
+  <body>
+    <header class="hero text-white">
+      <div class="container py-5">
+        <a class="text-white-50 text-decoration-none small" href="index.html">&larr; Kembali ke profil ICT</a>
+        <div class="col-lg-8 pt-4">
+          <p class="text-info fw-semibold mb-2">MATERI PEMULA</p>
+          <h1 class="display-5 fw-bold">Belajar Tag Dasar HTML</h1>
+          <p class="lead text-white-50 mb-0">Kenali bagian penting HTML melalui penjelasan singkat, contoh kode, dan hasilnya.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="row g-4">
+        <aside class="col-lg-3">
+          <nav class="card topic-card position-sticky" style="top: 1rem;">
+            <div class="card-body">
+              <h2 class="h6 fw-bold">Daftar Materi</h2>
+              <div class="nav flex-column nav-pills gap-1">
+                <a class="nav-link" href="#anatomi">Anatomi HTML</a>
+                <a class="nav-link" href="#teks">Tag Teks &amp; Judul</a>
+                <a class="nav-link" href="#media">Media &amp; Link</a>
+              </div>
+            </div>
+          </nav>
+        </aside>
+
+        <div class="col-lg-9">
+          <section id="anatomi" class="card topic-card mb-4">
+            <div class="card-body p-4 p-md-5">
+              <p class="text-primary fw-bold small mb-2">01 — DASAR STRUKTUR</p>
+              <h2 class="h3 fw-bold">Anatomi HTML</h2>
+              <p>Setiap halaman HTML memiliki struktur dasar. Browser membaca struktur ini untuk memahami isi halaman.</p>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Halo, dunia!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              <div class="row g-3 mt-3">
+                <div class="col-md-6"><p class="mb-1"><span class="tag">&lt;!DOCTYPE html&gt;</span></p><small class="text-secondary">Memberi tahu browser bahwa dokumen menggunakan HTML5.</small></div>
+                <div class="col-md-6"><p class="mb-1"><span class="tag">&lt;html&gt;</span></p><small class="text-secondary">Elemen utama yang membungkus seluruh dokumen HTML.</small></div>
+                <div class="col-md-6"><p class="mb-1"><span class="tag">&lt;head&gt;</span></p><small class="text-secondary">Berisi informasi halaman, seperti judul dan metadata.</small></div>
+                <div class="col-md-6"><p class="mb-1"><span class="tag">&lt;body&gt;</span></p><small class="text-secondary">Berisi semua konten yang terlihat oleh pengunjung.</small></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="teks" class="card topic-card mb-4">
+            <div class="card-body p-4 p-md-5">
+              <p class="text-primary fw-bold small mb-2">02 — KONTEN TEKS</p>
+              <h2 class="h3 fw-bold">Tag Teks &amp; Judul</h2>
+              <p>Gunakan heading untuk judul, paragraf untuk teks biasa, dan tag formatting untuk memberi penekanan.</p>
+              <pre><code>&lt;h1&gt;Judul Utama&lt;/h1&gt;
+&lt;h2&gt;Subjudul&lt;/h2&gt;
+&lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+&lt;p&gt;Teks bisa dibuat &lt;b&gt;tebal&lt;/b&gt; atau &lt;i&gt;miring&lt;/i&gt;.&lt;/p&gt;</code></pre>
+              <div class="example-box rounded-end p-3 mt-4">
+                <h1 class="h3">Judul Utama</h1>
+                <h2 class="h5">Subjudul</h2>
+                <p>Ini adalah sebuah paragraf.</p>
+                <p class="mb-0">Teks bisa dibuat <b>tebal</b> atau <i>miring</i>.</p>
+              </div>
+              <hr class="my-4" />
+              <h3 class="h5 fw-bold">Membuat daftar</h3>
+              <p><span class="tag">&lt;ul&gt;</span> membuat daftar tanpa urutan, sedangkan <span class="tag">&lt;ol&gt;</span> membuat daftar bernomor. Setiap item memakai <span class="tag">&lt;li&gt;</span>.</p>
+              <pre><code>&lt;ul&gt;
+  &lt;li&gt;Keyboard&lt;/li&gt;
+  &lt;li&gt;Mouse&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Buka editor kode&lt;/li&gt;
+  &lt;li&gt;Buat file HTML&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+          </section>
+
+          <section id="media" class="card topic-card">
+            <div class="card-body p-4 p-md-5">
+              <p class="text-primary fw-bold small mb-2">03 — GAMBAR &amp; TAUTAN</p>
+              <h2 class="h3 fw-bold">Media &amp; Link</h2>
+              <p>Tag <span class="tag">&lt;img&gt;</span> menampilkan gambar. Atribut <span class="tag">src</span> berisi lokasi gambar dan <span class="tag">alt</span> menjelaskan gambar bila tidak dapat dimuat atau dibaca pembaca layar.</p>
+              <pre><code>&lt;img src="gambar-belajar.jpg" alt="Siswa sedang belajar HTML"&gt;</code></pre>
+              <div class="example-box rounded-end p-3 mt-4">
+                <img class="img-fluid rounded" src="https://placehold.co/800x300/0b5ed7/ffffff?text=Contoh+Gambar" alt="Contoh gambar berwarna biru dengan teks Contoh Gambar" />
+              </div>
+              <hr class="my-4" />
+              <p>Tag <span class="tag">&lt;a&gt;</span> digunakan untuk membuat tautan. Atribut <span class="tag">href</span> menentukan alamat tujuan.</p>
+              <pre><code>&lt;a href="https://www.instagram.com/ictduacikbar/"&gt;
+  Kunjungi Instagram ICT
+&lt;/a&gt;</code></pre>
+              <div class="example-box rounded-end p-3 mt-4">
+                <a href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Kunjungi Instagram ICT</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-top bg-white py-4 text-center text-secondary">
+      <small>Media belajar HTML dasar — ICT Dua Cikbar</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
