@@ -3,54 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A simple starter web page." />
+    <meta name="description" content="A simple Bootstrap starter web page." />
     <title>Welcome</title>
-    <style>
-      :root { color-scheme: light; }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-        color: #1f2937;
-        background: #f3f4f6;
-      }
-
-      main {
-        width: min(100%, 620px);
-        padding: 48px;
-        text-align: center;
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 12px 30px rgba(31, 41, 55, 0.12);
-      }
-
-      h1 { margin-top: 0; font-size: clamp(2rem, 7vw, 3rem); }
-      p { line-height: 1.6; color: #4b5563; }
-
-      a {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 12px 20px;
-        color: #ffffff;
-        background: #2563eb;
-        border-radius: 8px;
-        text-decoration: none;
-      }
-
-      a:hover, a:focus-visible { background: #1d4ed8; }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <main>
-      <h1>Hello, world!</h1>
-      <p>This is a simple, responsive HTML web page. Start editing it to make it your own.</p>
-      <a href="mailto:hello@example.com">Get in touch</a>
+  <body class="bg-light">
+    <main class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+      <section class="card border-0 shadow-sm text-center" style="max-width: 620px;">
+        <div class="card-body p-4 p-md-5">
+          <h1 class="display-5 fw-bold mb-3">Hello, world!</h1>
+          <p class="lead text-secondary mb-4">
+            This is a simple, responsive web page powered by Bootstrap.
+          </p>
+          <a class="btn btn-primary btn-lg" href="mailto:askhacking@gmail.com">Get in touch</a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
