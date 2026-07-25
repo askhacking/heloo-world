@@ -1,28 +1,154 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A simple Bootstrap starter web page." />
-    <title>Welcome</title>
+    <meta name="description" content="Profil ekstrakurikuler ICT Dua Cikbar." />
+    <title>ICT Dua Cikbar | Ekstrakurikuler</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <style>
+      :root { --ict-blue: #0b5ed7; --ict-navy: #071a36; }
+      body { color: #172033; }
+      .hero {
+        background: radial-gradient(circle at top right, #1976e9 0, #0b5ed7 35%, var(--ict-navy) 100%);
+      }
+      .brand-mark {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        border: 2px solid currentColor;
+        border-radius: 14px;
+        font-weight: 800;
+        letter-spacing: -0.08em;
+      }
+      .hero .brand-mark { background: rgba(255, 255, 255, 0.12); }
+      .stat-card, .activity-card { border: 0; box-shadow: 0 0.5rem 1.5rem rgba(21, 35, 63, 0.08); }
+      .activity-icon {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        font-size: 1.4rem;
+        background: #e8f1ff;
+      }
+      .section-label { color: var(--ict-blue); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+    </style>
   </head>
-  <body class="bg-light">
-    <main class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
-      <section class="card border-0 shadow-sm text-center" style="max-width: 620px;">
-        <div class="card-body p-4 p-md-5">
-          <h1 class="display-5 fw-bold mb-3">Hello, world!</h1>
-          <p class="lead text-secondary mb-4">
-            This is a simple, responsive web page powered by Bootstrap.
-          </p>
-          <a class="btn btn-primary btn-lg" href="mailto:askhacking@gmail.com">Get in touch</a>
+  <body>
+    <header class="hero text-white">
+      <nav class="navbar navbar-expand-md navbar-dark py-3">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#beranda">
+            <span class="brand-mark">IT</span>
+            <span>ICT Dua Cikbar</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto gap-md-2">
+              <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+              <li class="nav-item"><a class="nav-link" href="#kegiatan">Kegiatan</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gabung">Gabung</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="beranda" class="container py-5 py-lg-6">
+        <div class="row align-items-center g-5 py-4 py-lg-5">
+          <div class="col-lg-7">
+            <p class="text-info-emphasis text-white-50 fw-semibold mb-3">EKSTRAKURIKULER TEKNOLOGI</p>
+            <h1 class="display-4 fw-bold mb-4">Belajar, berkarya, dan tumbuh bersama teknologi.</h1>
+            <p class="lead text-white-50 mb-4">ICT Dua Cikbar adalah ruang untuk mengeksplorasi dunia digital, mengasah kreativitas, dan membangun karya bersama.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-light btn-lg px-4" href="#gabung">Gabung ICT</a>
+              <a class="btn btn-outline-light btn-lg px-4" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Lihat Instagram</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card bg-white bg-opacity-10 border border-white border-opacity-25 text-white shadow-lg">
+              <div class="card-body p-4 p-lg-5">
+                <p class="mb-2 text-white-50">Ikuti kami di Instagram</p>
+                <p class="h3 fw-bold mb-3">@ictduacikbar</p>
+                <p class="mb-0 text-white-50">Dapatkan kabar kegiatan, karya, dan momen seru dari komunitas ICT.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+    </header>
+
+    <main>
+      <section id="tentang" class="container py-5 py-lg-6">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <p class="section-label mb-2">TENTANG KAMI</p>
+            <h2 class="display-6 fw-bold">Komunitas untuk penjelajah dunia digital.</h2>
+          </div>
+          <div class="col-lg-7">
+            <p class="fs-5 text-secondary mb-0">Kami belajar melalui praktik, berbagi pengetahuan, dan berkolaborasi dalam proyek kreatif. Baik baru mulai maupun sudah berpengalaman, semua dapat tumbuh bersama di ICT Dua Cikbar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kegiatan" class="bg-light py-5 py-lg-6">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="section-label mb-2">APA YANG KAMI PELAJARI</p>
+            <h2 class="fw-bold">Eksplorasi teknologi bersama</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="activity-card card h-100">
+                <div class="card-body p-4">
+                  <div class="activity-icon mb-4">⌨️</div>
+                  <h3 class="h4 fw-bold">Pemrograman</h3>
+                  <p class="text-secondary mb-0">Mengenal logika, membuat program, dan mengubah ide menjadi solusi digital.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="activity-card card h-100">
+                <div class="card-body p-4">
+                  <div class="activity-icon mb-4">🎨</div>
+                  <h3 class="h4 fw-bold">Desain Digital</h3>
+                  <p class="text-secondary mb-0">Mengasah kreativitas melalui desain grafis, konten, dan tampilan digital.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="activity-card card h-100">
+                <div class="card-body p-4">
+                  <div class="activity-icon mb-4">🚀</div>
+                  <h3 class="h4 fw-bold">Proyek Bersama</h3>
+                  <p class="text-secondary mb-0">Berkolaborasi, berbagi ide, dan membuat karya yang bisa dibanggakan.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gabung" class="container py-5 py-lg-6 text-center">
+        <p class="section-label mb-2">MARI TERHUBUNG</p>
+        <h2 class="display-6 fw-bold">Tertarik bergabung dengan ICT?</h2>
+        <p class="text-secondary fs-5 mx-auto mb-4" style="max-width: 640px;">Pantau Instagram kami untuk informasi kegiatan dan pendaftaran anggota baru.</p>
+        <a class="btn btn-primary btn-lg px-4" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Kunjungi @ictduacikbar</a>
+      </section>
     </main>
+
+    <footer class="border-top py-4 text-center text-secondary">
+      <small>&copy; 2026 ICT Dua Cikbar. Berkarya dengan teknologi.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
