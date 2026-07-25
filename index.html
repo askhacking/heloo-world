@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple starter web page." />
+    <title>Welcome</title>
+    <style>
+      :root { color-scheme: light; }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+        color: #1f2937;
+        background: #f3f4f6;
+      }
+
+      main {
+        width: min(100%, 620px);
+        padding: 48px;
+        text-align: center;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(31, 41, 55, 0.12);
+      }
+
+      h1 { margin-top: 0; font-size: clamp(2rem, 7vw, 3rem); }
+      p { line-height: 1.6; color: #4b5563; }
+
+      a {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 20px;
+        color: #ffffff;
+        background: #2563eb;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+
+      a:hover, a:focus-visible { background: #1d4ed8; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Hello, world!</h1>
+      <p>This is a simple, responsive HTML web page. Start editing it to make it your own.</p>
+      <a href="mailto:hello@example.com">Get in touch</a>
+    </main>
+  </body>
+</html>
