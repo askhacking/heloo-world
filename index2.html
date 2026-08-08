@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Komunitas dan ekstrakurikuler ICT Dua Cikbar." />
+    <title>ICT Dua Cikbar | Berkarya Bersama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      :root {
+        --navy: #21285b;
+        --blue: #6b7fbf;
+        --cream: #f3eee8;
+        --yellow: #f4b71a;
+        --gray: #5f6062;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { color: var(--navy); background: var(--cream); font-family: Arial, sans-serif; }
+      .navbar { background: rgba(33, 40, 91, .96); }
+      .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 2px solid var(--cream); border-radius: 12px; font-weight: 800; letter-spacing: -.08em; }
+      .hero { min-height: 670px; display: grid; place-items: center; position: relative; overflow: hidden; color: var(--cream); background: linear-gradient(135deg, var(--navy) 15%, #303d7b 54%, var(--blue)); }
+      .hero::after { content: "</>"; position: absolute; right: 5%; bottom: -5rem; color: rgba(243, 238, 232, .08); font-size: clamp(15rem, 35vw, 32rem); font-weight: 800; line-height: 1; }
+      .hero-content { position: relative; z-index: 1; max-width: 720px; }
+      .eyebrow { color: var(--yellow); letter-spacing: .16em; font-size: .76rem; font-weight: 800; }
+      .display-title { font-size: clamp(2.7rem, 7vw, 5.5rem); font-weight: 800; line-height: .98; letter-spacing: -.05em; }
+      .btn-cream { color: var(--navy); background: var(--cream); border-color: var(--cream); font-weight: 700; }
+      .btn-cream:hover { color: var(--navy); background: #fff; border-color: #fff; }
+      .btn-line { color: var(--cream); border: 1px solid rgba(243, 238, 232, .75); font-weight: 700; }
+      .btn-line:hover { color: var(--navy); background: var(--cream); border-color: var(--cream); }
+      .section-space { padding: 6rem 0; }
+      .section-label { color: var(--blue); font-size: .78rem; letter-spacing: .14em; font-weight: 800; }
+      .portfolio { background: #e8e3dd; }
+      .portfolio-window { position: relative; overflow: hidden; border-radius: 24px; background: var(--navy); box-shadow: 0 1.25rem 2.5rem rgba(33, 40, 91, .2); }
+      .portfolio-track { display: flex; transition: transform .45s ease; }
+      .portfolio-slide { min-width: 100%; padding: clamp(2rem, 6vw, 5rem); min-height: 360px; display: grid; align-content: end; color: var(--cream); }
+      .portfolio-slide:nth-child(1) { background: linear-gradient(135deg, #21285b, #6b7fbf); }
+      .portfolio-slide:nth-child(2) { background: linear-gradient(135deg, #6b7fbf, #21285b); }
+      .portfolio-slide:nth-child(3) { background: linear-gradient(135deg, #21285b, #485b9e); }
+      .portfolio-number { color: var(--yellow); font-size: .9rem; font-weight: 800; letter-spacing: .12em; }
+      .slider-control { width: 46px; height: 46px; border: 0; border-radius: 50%; color: var(--navy); background: var(--cream); font-size: 1.3rem; font-weight: 800; }
+      .pricing-card { height: 100%; padding: 2rem; border: 1px solid #d8d1c8; border-radius: 18px; background: #fffdf9; }
+      .pricing-card.popular { color: var(--cream); border-color: var(--navy); background: var(--navy); transform: translateY(-.75rem); box-shadow: 0 1.25rem 2rem rgba(33, 40, 91, .2); }
+      .pricing-card .price { font-size: 2.25rem; font-weight: 800; letter-spacing: -.06em; }
+      .pricing-card ul { padding-left: 1.2rem; }
+      .pricing-card li { margin-bottom: .65rem; }
+      .contact { color: var(--cream); background: linear-gradient(135deg, var(--navy), var(--blue)); }
+      .social-link { display: flex; align-items: center; justify-content: center; min-height: 64px; padding: 1rem; border: 1px solid rgba(243, 238, 232, .45); border-radius: 12px; color: var(--cream); text-decoration: none; font-weight: 800; transition: .2s; }
+      .social-link:hover { color: var(--navy); background: var(--cream); }
+      footer { color: var(--cream); background: #171d48; }
+      footer a { color: rgba(243, 238, 232, .7); text-decoration: none; }
+      footer a:hover { color: var(--yellow); }
+      @media (max-width: 767.98px) { .section-space { padding: 4.5rem 0; } .pricing-card.popular { transform: none; } }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#beranda"><span class="brand-mark">IT</span>ICT Dua Cikbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+        <div id="menu" class="collapse navbar-collapse"><ul class="navbar-nav ms-auto gap-md-3"><li class="nav-item"><a class="nav-link" href="#karya">Karya</a></li><li class="nav-item"><a class="nav-link" href="#program">Program</a></li><li class="nav-item"><a class="nav-link" href="#gabung">Gabung</a></li></ul></div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="beranda" class="hero">
+        <div class="container hero-content py-5">
+          <p class="eyebrow mb-3">EKSTRAKURIKULER TEKNOLOGI</p>
+          <h1 class="display-title mb-4">Belajar. Berkarya.<br />Tumbuh bersama.</h1>
+          <p class="lead text-white-50 mb-4">Ruang bagi siswa untuk mengeksplorasi teknologi, menciptakan karya digital, dan berkolaborasi melalui proyek nyata.</p>
+          <div class="d-flex flex-wrap gap-3"><a class="btn btn-cream btn-lg px-4" href="#gabung">Gabung ICT</a><a class="btn btn-line btn-lg px-4" href="#karya">Lihat karya</a></div>
+        </div>
+      </section>
+
+      <section id="karya" class="portfolio section-space">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4"><div><p class="section-label mb-2">PORTOFOLIO KEGIATAN</p><h2 class="display-6 fw-bold mb-0">Karya dan proses belajar kami.</h2></div><div class="d-flex gap-2"><button class="slider-control" type="button" data-slider="prev" aria-label="Karya sebelumnya">‹</button><button class="slider-control" type="button" data-slider="next" aria-label="Karya berikutnya">›</button></div></div>
+          <div class="portfolio-window"><div id="portfolio-track" class="portfolio-track">
+            <article class="portfolio-slide"><p class="portfolio-number mb-2">01 / WEBSITE</p><h3 class="display-5 fw-bold">Membangun halaman web dari ide sederhana.</h3><p class="mb-0 text-white-50">Belajar HTML, CSS, dan desain antarmuka yang mudah digunakan.</p></article>
+            <article class="portfolio-slide"><p class="portfolio-number mb-2">02 / DESAIN</p><h3 class="display-5 fw-bold">Mengubah cerita menjadi visual yang menarik.</h3><p class="mb-0 text-white-50">Eksplorasi poster, konten sosial media, dan identitas visual.</p></article>
+            <article class="portfolio-slide"><p class="portfolio-number mb-2">03 / PROYEK</p><h3 class="display-5 fw-bold">Berkolaborasi untuk membuat dampak.</h3><p class="mb-0 text-white-50">Mencoba, memperbaiki, dan mempresentasikan karya bersama tim.</p></article>
+          </div></div>
+        </div>
+      </section>
+
+      <section id="program" class="section-space">
+        <div class="container"><div class="text-center mb-5"><p class="section-label mb-2">PROGRAM BELAJAR</p><h2 class="display-6 fw-bold">Pilih jalur eksplorasimu.</h2><p class="text-secondary mb-0">Setiap program terbuka untuk anggota yang ingin mencoba dan berkembang.</p></div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4"><article class="pricing-card"><h3 class="h4 fw-bold">Dasar</h3><p class="price">Mulai</p><p class="text-secondary">Untuk yang baru mengenal dunia digital.</p><ul><li>Dasar HTML dan CSS</li><li>Logika pemrograman</li><li>Latihan bersama</li></ul><a class="btn btn-outline-primary w-100 mt-3" href="belajar-html-dasar.html">Mulai belajar</a></article></div>
+            <div class="col-md-4"><article class="pricing-card popular"><span class="badge text-bg-warning text-dark mb-3">REKOMENDASI</span><h3 class="h4 fw-bold">Kreatif</h3><p class="price">Berkarya</p><p class="text-white-50">Untuk pengembang dan desainer muda.</p><ul><li>Proyek website</li><li>Desain konten digital</li><li>Umpan balik mentor</li></ul><a class="btn btn-cream w-100 mt-3" href="#gabung">Ikut program</a></article></div>
+            <div class="col-md-4"><article class="pricing-card"><h3 class="h4 fw-bold">Kolaborasi</h3><p class="price">Beraksi</p><p class="text-secondary">Untuk tim yang siap membuat proyek bersama.</p><ul><li>Proyek komunitas</li><li>Presentasi karya</li><li>Portofolio tim</li></ul><a class="btn btn-outline-primary w-100 mt-3" href="#gabung">Gabung tim</a></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gabung" class="contact section-space text-center"><div class="container"><p class="eyebrow mb-2">MARI TERHUBUNG</p><h2 class="display-5 fw-bold mb-3">Siap membuat karya pertamamu?</h2><p class="lead text-white-50 mx-auto mb-5" style="max-width: 650px">Pilih salah satu kanal untuk mengetahui kegiatan ICT Dua Cikbar dan informasi pendaftaran anggota.</p><div class="row g-3 justify-content-center"><div class="col-sm-4"><a class="social-link" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Instagram</a></div><div class="col-sm-4"><a class="social-link" href="page-user.html">Profil Anggota</a></div><div class="col-sm-4"><a class="social-link" href="belajar-html-dasar.html">Materi HTML</a></div></div></div></section>
+    </main>
+
+    <footer class="pt-5 pb-4"><div class="container"><div class="row g-4"><div class="col-md-5"><h2 class="h4 fw-bold">ICT Dua Cikbar</h2><p class="text-white-50 mb-0">Belajar teknologi, membangun kreativitas, dan tumbuh melalui kolaborasi.</p></div><div class="col-6 col-md-3"><h3 class="h6 text-uppercase">Jelajahi</h3><p class="mb-2"><a href="#karya">Karya</a></p><p class="mb-0"><a href="#program">Program</a></p></div><div class="col-6 col-md-3"><h3 class="h6 text-uppercase">Terhubung</h3><p class="mb-2"><a href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Instagram</a></p><p class="mb-0"><a href="#gabung">Gabung ICT</a></p></div></div><hr class="border-secondary my-4" /><small class="text-white-50">© 2026 ICT Dua Cikbar. Berkarya dengan teknologi.</small></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const track = document.querySelector('#portfolio-track');
+      const totalSlides = track.children.length;
+      let activeSlide = 0;
+      document.querySelectorAll('[data-slider]').forEach((button) => {
+        button.addEventListener('click', () => {
+          activeSlide = button.dataset.slider === 'next' ? (activeSlide + 1) % totalSlides : (activeSlide - 1 + totalSlides) % totalSlides;
+          track.style.transform = `translateX(-${activeSlide * 100}%)`;
+        });
+      });
+    </script>
+  </body>
+</html>

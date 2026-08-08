@@ -12,10 +12,16 @@
       crossorigin="anonymous"
     />
     <style>
-      :root { --ict-blue: #0b5ed7; --ict-navy: #071a36; }
-      body { color: #172033; }
+      :root {
+        --ict-yellow: #f4b71a;
+        --ict-navy: #21285b;
+        --ict-cream: #f3eee8;
+        --ict-blue: #6b7fbf;
+        --ict-gray: #5f6062;
+      }
+      body { color: var(--ict-navy); background: var(--ict-cream); }
       .hero {
-        background: radial-gradient(circle at top right, #1976e9 0, #0b5ed7 35%, var(--ict-navy) 100%);
+        background: linear-gradient(135deg, var(--ict-navy) 0%, var(--ict-navy) 45%, var(--ict-blue) 100%);
       }
       .brand-mark {
         width: 48px;
@@ -28,7 +34,7 @@
         letter-spacing: -0.08em;
       }
       .hero .brand-mark { background: rgba(255, 255, 255, 0.12); }
-      .stat-card, .activity-card { border: 0; box-shadow: 0 0.5rem 1.5rem rgba(21, 35, 63, 0.08); }
+      .stat-card, .activity-card { border: 0; box-shadow: 0 0.5rem 1.5rem rgba(33, 40, 91, 0.12); }
       .activity-icon {
         width: 48px;
         height: 48px;
@@ -36,9 +42,34 @@
         place-items: center;
         border-radius: 12px;
         font-size: 1.4rem;
-        background: #e8f1ff;
+        background: #e3e7f3;
       }
       .section-label { color: var(--ict-blue); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+      .bg-light { background-color: #e7e2dc !important; }
+      .text-secondary { color: var(--ict-gray) !important; }
+      .text-primary { color: var(--ict-navy) !important; }
+      .btn-primary {
+        --bs-btn-color: var(--ict-navy);
+        --bs-btn-bg: var(--ict-cream);
+        --bs-btn-border-color: var(--ict-cream);
+        --bs-btn-hover-color: var(--ict-navy);
+        --bs-btn-hover-bg: #ffffff;
+        --bs-btn-hover-border-color: #ffffff;
+        --bs-btn-active-color: var(--ict-navy);
+        --bs-btn-active-bg: #ffffff;
+        --bs-btn-active-border-color: #ffffff;
+      }
+      .btn-outline-primary {
+        --bs-btn-color: var(--ict-navy);
+        --bs-btn-border-color: var(--ict-navy);
+        --bs-btn-hover-bg: var(--ict-navy);
+        --bs-btn-hover-border-color: var(--ict-navy);
+        --bs-btn-active-bg: var(--ict-navy);
+        --bs-btn-active-border-color: var(--ict-navy);
+      }
+      .hero .btn-light { color: var(--ict-navy); background: var(--ict-cream); border-color: var(--ict-cream); }
+      .hero .btn-light:hover { color: var(--ict-navy); background: #ffffff; border-color: #ffffff; }
+      footer { background: #e7e2dc; border-color: #d2cbc3 !important; }
     </style>
   </head>
   <body>

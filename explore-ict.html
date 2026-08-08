@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ruang eksplorasi dan kegiatan ICT Dua Cikbar." />
+    <title>Ruang Eksplorasi | ICT Dua Cikbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <style>
+      :root { --navy: #21285b; --blue: #6b7fbf; --yellow: #f4b71a; --cream: #f3eee8; --ink: #28304d; }
+      body { color: var(--ink); background: var(--cream); }
+      .navbar { background: var(--navy); }
+      .brand-mark { display: inline-grid; width: 42px; height: 42px; place-items: center; border: 2px solid var(--yellow); border-radius: 12px; color: var(--yellow); font-weight: 800; letter-spacing: -.08em; }
+      .hero { overflow: hidden; color: white; background: var(--navy); }
+      .hero-copy { position: relative; z-index: 1; }
+      .hero-orbit { position: absolute; width: 520px; height: 520px; right: -170px; top: -150px; border: 70px solid rgba(107, 127, 191, .35); border-radius: 50%; }
+      .hero-orbit::after { content: ""; position: absolute; width: 200px; height: 200px; top: 85px; left: 85px; background: var(--yellow); border-radius: 50%; opacity: .9; }
+      .eyebrow { color: var(--yellow); font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
+      .btn-warning { --bs-btn-color: var(--navy); --bs-btn-bg: var(--yellow); --bs-btn-border-color: var(--yellow); --bs-btn-hover-color: var(--navy); --bs-btn-hover-bg: #ffc94e; --bs-btn-hover-border-color: #ffc94e; }
+      .path-card, .agenda-card { border: 0; border-radius: 18px; box-shadow: 0 12px 28px rgba(33, 40, 91, .1); }
+      .path-number { display: grid; width: 44px; height: 44px; place-items: center; border-radius: 50%; color: var(--navy); background: #fbe2a1; font-weight: 800; }
+      .accent-panel { color: white; background: linear-gradient(135deg, var(--blue), var(--navy)); border-radius: 24px; }
+      .calendar-day { min-width: 68px; color: var(--navy); background: var(--yellow); border-radius: 14px; font-weight: 800; }
+      footer { color: #e7e2dc; background: #161b42; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#beranda"><span class="brand-mark">IT</span><span>ICT Dua Cikbar</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><span class="navbar-toggler-icon"></span></button>
+        <div id="menu" class="collapse navbar-collapse"><ul class="navbar-nav ms-auto gap-md-2"><li class="nav-item"><a class="nav-link" href="#jalur">Jalur belajar</a></li><li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li><li class="nav-item"><a class="nav-link" href="#mulai">Mulai</a></li></ul></div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="beranda" class="hero position-relative py-5 py-lg-6">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="container hero-copy py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="eyebrow mb-3">RUANG EKSPLORASI ICT</p>
+              <h1 class="display-3 fw-bold mb-4">Ide kecil bisa menjadi karya besar.</h1>
+              <p class="lead text-white-50 mb-4">Temukan jalur belajarmu, bertemu teman satu minat, lalu wujudkan eksperimen digital yang kamu banggakan.</p>
+              <a class="btn btn-warning btn-lg px-4" href="#jalur">Pilih jalur belajar</a>
+            </div>
+            <div class="col-lg-5">
+              <div class="p-4 p-lg-5 border border-light border-opacity-25 rounded-4 bg-white bg-opacity-10">
+                <p class="eyebrow mb-2">MISI MINGGU INI</p>
+                <h2 class="h3 fw-bold">Buat satu hal yang berguna.</h2>
+                <p class="mb-0 text-white-50">Boleh poster, halaman web, automasi sederhana, atau ide digital lain. Yang penting, mulai dulu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jalur" class="container py-5 py-lg-6">
+        <div class="row align-items-end mb-4 mb-lg-5"><div class="col-lg-7"><p class="eyebrow mb-2">PILIH CARA BERTUMBUH</p><h2 class="display-6 fw-bold">Tiga jalur, banyak kemungkinan.</h2></div><div class="col-lg-5"><p class="text-secondary mb-0">Tidak perlu sudah jago. Pilih yang membuatmu penasaran dan pelajari lewat praktik.</p></div></div>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="path-card card h-100"><div class="card-body p-4"><div class="path-number mb-4">01</div><h3 class="h4 fw-bold">Web Starter</h3><p class="text-secondary mb-0">Kenali HTML, CSS, dan JavaScript untuk membuat halaman pertamamu tampil hidup.</p></div></article></div>
+          <div class="col-md-4"><article class="path-card card h-100"><div class="card-body p-4"><div class="path-number mb-4">02</div><h3 class="h4 fw-bold">Visual Lab</h3><p class="text-secondary mb-0">Racik warna, tipografi, dan konten agar pesan visualmu mudah diingat.</p></div></article></div>
+          <div class="col-md-4"><article class="path-card card h-100"><div class="card-body p-4"><div class="path-number mb-4">03</div><h3 class="h4 fw-bold">Project Squad</h3><p class="text-secondary mb-0">Ubah ide menjadi proyek nyata bersama tim, dari perencanaan hingga presentasi.</p></div></article></div>
+        </div>
+      </section>
+
+      <section id="agenda" class="py-5 py-lg-6 bg-white">
+        <div class="container"><div class="text-center mb-5"><p class="eyebrow mb-2">RITME KOMUNITAS</p><h2 class="fw-bold">Agenda yang bisa kamu nantikan.</h2></div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-5"><article class="agenda-card card h-100"><div class="card-body p-4 d-flex gap-3"><div class="calendar-day text-center py-2 px-2"><span class="d-block small">SAB</span><span class="fs-4">14</span></div><div><h3 class="h5 fw-bold">Ngulik Web Bareng</h3><p class="text-secondary mb-0">Sesi praktik membuat landing page yang responsif untuk pemula.</p></div></div></article></div>
+            <div class="col-lg-5"><article class="agenda-card card h-100"><div class="card-body p-4 d-flex gap-3"><div class="calendar-day text-center py-2 px-2"><span class="d-block small">RAB</span><span class="fs-4">18</span></div><div><h3 class="h5 fw-bold">Karya &amp; Cerita</h3><p class="text-secondary mb-0">Pamerkan progres, tukar masukan, dan dapatkan ide baru dari teman.</p></div></div></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mulai" class="container py-5 py-lg-6"><div class="accent-panel p-4 p-md-5 text-center"><p class="eyebrow mb-2">LANGKAH PERTAMA</p><h2 class="display-6 fw-bold">Bawa rasa ingin tahumu.</h2><p class="mx-auto text-white-50 mb-4" style="max-width: 620px;">Ikuti kabar komunitas, pilih kegiatan yang cocok, dan mulai membangun karya bersama ICT Dua Cikbar.</p><a class="btn btn-warning btn-lg px-4" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Kunjungi Instagram</a></div></section>
+    </main>
+    <footer class="py-4 text-center"><small>&copy; 2026 ICT Dua Cikbar — Eksplorasi, kolaborasi, berkarya.</small></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
