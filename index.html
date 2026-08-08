@@ -3,215 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Profil ekstrakurikuler ICT Dua Cikbar." />
-    <title>ICT Dua Cikbar | Ekstrakurikuler</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <style>
-      :root {
-        --ict-yellow: #f4b71a;
-        --ict-navy: #21285b;
-        --ict-cream: #f3eee8;
-        --ict-blue: #6b7fbf;
-        --ict-gray: #5f6062;
-      }
-      body { color: var(--ict-navy); background: var(--ict-cream); }
-      .hero {
-        background: linear-gradient(135deg, var(--ict-navy) 0%, var(--ict-navy) 45%, var(--ict-blue) 100%);
-      }
-      .brand-mark {
-        width: 48px;
-        height: 48px;
-        display: grid;
-        place-items: center;
-        border: 2px solid currentColor;
-        border-radius: 14px;
-        font-weight: 800;
-        letter-spacing: -0.08em;
-      }
-      .hero .brand-mark { background: rgba(255, 255, 255, 0.12); }
-      .stat-card, .activity-card { border: 0; box-shadow: 0 0.5rem 1.5rem rgba(33, 40, 91, 0.12); }
-      .activity-icon {
-        width: 48px;
-        height: 48px;
-        display: grid;
-        place-items: center;
-        border-radius: 12px;
-        font-size: 1.4rem;
-        background: #e3e7f3;
-      }
-      .section-label { color: var(--ict-blue); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
-      .bg-light { background-color: #e7e2dc !important; }
-      .text-secondary { color: var(--ict-gray) !important; }
-      .text-primary { color: var(--ict-navy) !important; }
-      .btn-primary {
-        --bs-btn-color: var(--ict-navy);
-        --bs-btn-bg: var(--ict-cream);
-        --bs-btn-border-color: var(--ict-cream);
-        --bs-btn-hover-color: var(--ict-navy);
-        --bs-btn-hover-bg: #ffffff;
-        --bs-btn-hover-border-color: #ffffff;
-        --bs-btn-active-color: var(--ict-navy);
-        --bs-btn-active-bg: #ffffff;
-        --bs-btn-active-border-color: #ffffff;
-      }
-      .btn-outline-primary {
-        --bs-btn-color: var(--ict-navy);
-        --bs-btn-border-color: var(--ict-navy);
-        --bs-btn-hover-bg: var(--ict-navy);
-        --bs-btn-hover-border-color: var(--ict-navy);
-        --bs-btn-active-bg: var(--ict-navy);
-        --bs-btn-active-border-color: var(--ict-navy);
-      }
-      .hero .btn-light { color: var(--ict-navy); background: var(--ict-cream); border-color: var(--ict-cream); }
-      .hero .btn-light:hover { color: var(--ict-navy); background: #ffffff; border-color: #ffffff; }
-      footer { background: #e7e2dc; border-color: #d2cbc3 !important; }
-    </style>
+    <meta name="description" content="Profil komunitas ICT Dua Cikbar." />
+    <title>ICT Dua Cikbar — Community Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="hero text-white">
-      <nav class="navbar navbar-expand-md navbar-dark py-3">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#beranda">
-            <span class="brand-mark">IT</span>
-            <span>ICT Dua Cikbar</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto gap-md-2">
-              <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
-              <li class="nav-item"><a class="nav-link" href="#kegiatan">Kegiatan</a></li>
-              <li class="nav-item"><a class="nav-link" href="#belajar">Belajar</a></li>
-              <li class="nav-item"><a class="nav-link" href="#gabung">Gabung</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <section id="beranda" class="container py-5 py-lg-6">
-        <div class="row align-items-center g-5 py-4 py-lg-5">
-          <div class="col-lg-7">
-            <p class="text-info-emphasis text-white-50 fw-semibold mb-3">EKSTRAKURIKULER TEKNOLOGI</p>
-            <h1 class="display-4 fw-bold mb-4">Belajar, berkarya, dan tumbuh bersama teknologi.</h1>
-            <p class="lead text-white-50 mb-4">ICT Dua Cikbar adalah ruang untuk mengeksplorasi dunia digital, mengasah kreativitas, dan membangun karya bersama.</p>
-            <div class="d-flex flex-wrap gap-3">
-              <a class="btn btn-light btn-lg px-4" href="belajar-html-dasar.html">Belajar HTML</a>
-              <a class="btn btn-outline-light btn-lg px-4" href="page-user.html">Lihat Profil</a>
-              <a class="btn btn-outline-light btn-lg px-4" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Lihat Instagram</a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="card bg-white bg-opacity-10 border border-white border-opacity-25 text-white shadow-lg">
-              <div class="card-body p-4 p-lg-5">
-                <p class="mb-2 text-white-50">Ikuti kami di Instagram</p>
-                <p class="h3 fw-bold mb-3">@ictduacikbar</p>
-                <p class="mb-0 text-white-50">Dapatkan kabar kegiatan, karya, dan momen seru dari komunitas ICT.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <body class="community-page">
+    <header class="wrap">
+      <nav class="nav" aria-label="Navigasi utama"><a class="brand" href="#beranda"><span class="brand-mark">ICT</span><span>dua cikbar</span></a><div class="nav-links"><a href="#tentang">Tentang</a><a href="#agenda">Agenda</a><a href="#anggota">Anggota</a><a class="join" href="#gabung">Gabung kami ↗</a></div></nav>
     </header>
-
     <main>
-      <section id="tentang" class="container py-5 py-lg-6">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5">
-            <p class="section-label mb-2">TENTANG KAMI</p>
-            <h2 class="display-6 fw-bold">Komunitas untuk penjelajah dunia digital.</h2>
-          </div>
-          <div class="col-lg-7">
-            <p class="fs-5 text-secondary mb-0">Kami belajar melalui praktik, berbagi pengetahuan, dan berkolaborasi dalam proyek kreatif. Baik baru mulai maupun sudah berpengalaman, semua dapat tumbuh bersama di ICT Dua Cikbar.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="kegiatan" class="bg-light py-5 py-lg-6">
-        <div class="container">
-          <div class="text-center mb-5">
-            <p class="section-label mb-2">APA YANG KAMI PELAJARI</p>
-            <h2 class="fw-bold">Eksplorasi teknologi bersama</h2>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <article class="activity-card card h-100">
-                <div class="card-body p-4">
-                  <div class="activity-icon mb-4">⌨️</div>
-                  <h3 class="h4 fw-bold">Pemrograman</h3>
-                  <p class="text-secondary mb-0">Mengenal logika, membuat program, dan mengubah ide menjadi solusi digital.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="activity-card card h-100">
-                <div class="card-body p-4">
-                  <div class="activity-icon mb-4">🎨</div>
-                  <h3 class="h4 fw-bold">Desain Digital</h3>
-                  <p class="text-secondary mb-0">Mengasah kreativitas melalui desain grafis, konten, dan tampilan digital.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="activity-card card h-100">
-                <div class="card-body p-4">
-                  <div class="activity-icon mb-4">🚀</div>
-                  <h3 class="h4 fw-bold">Proyek Bersama</h3>
-                  <p class="text-secondary mb-0">Berkolaborasi, berbagi ide, dan membuat karya yang bisa dibanggakan.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="belajar" class="container py-5 py-lg-6">
-        <div class="text-center mb-5">
-          <p class="section-label mb-2">MEDIA BELAJAR</p>
-          <h2 class="fw-bold">Mulai belajar bersama ICT</h2>
-          <p class="text-secondary mb-0">Akses materi dasar dan contoh profil anggota melalui tautan berikut.</p>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6">
-            <article class="activity-card card h-100">
-              <div class="card-body p-4 p-lg-5">
-                <p class="text-primary fw-bold small mb-2">MATERI PEMULA</p>
-                <h3 class="h4 fw-bold">Belajar Tag Dasar HTML</h3>
-                <p class="text-secondary">Pelajari anatomi HTML, tag teks, daftar, gambar, dan tautan melalui contoh kode yang mudah dipahami.</p>
-                <a class="btn btn-primary" href="belajar-html-dasar.html">Buka materi HTML</a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="activity-card card h-100">
-              <div class="card-body p-4 p-lg-5">
-                <p class="text-primary fw-bold small mb-2">CONTOH HALAMAN</p>
-                <h3 class="h4 fw-bold">Profil Pengguna</h3>
-                <p class="text-secondary">Lihat contoh halaman biodata singkat yang berisi nama, cita-cita, hobi, dan foto profil.</p>
-                <a class="btn btn-outline-primary" href="page-user.html">Buka halaman profil</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="gabung" class="container py-5 py-lg-6 text-center">
-        <p class="section-label mb-2">MARI TERHUBUNG</p>
-        <h2 class="display-6 fw-bold">Tertarik bergabung dengan ICT?</h2>
-        <p class="text-secondary fs-5 mx-auto mb-4" style="max-width: 640px;">Pantau Instagram kami untuk informasi kegiatan dan pendaftaran anggota baru.</p>
-        <a class="btn btn-primary btn-lg px-4" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Kunjungi @ictduacikbar</a>
-      </section>
+      <section id="beranda" class="hero wrap"><div class="hero-grid"><div><p class="eyebrow">Komunitas pelajar · Cikarang Barat</p><h1>Ruang untuk tumbuh, membuat, dan terhubung.</h1><p class="lead">ICT Dua Cikbar adalah komunitas pelajar yang percaya bahwa ide paling baik lahir saat kita belajar dan berkarya bersama.</p><div class="actions"><a class="button primary" href="#gabung">Jadi bagian dari kami <span class="arrow">→</span></a><a class="button" href="#tentang">Kenali komunitas</a></div></div><div class="visual" aria-label="Ilustrasi komunitas ICT"><div class="orbit"></div><div class="community-card"><p class="mono">Creative &amp; technology club</p><h2>Made together, better together.</h2><p>Beragam kepala, satu semangat untuk mencipta.</p><div class="avatars"><span class="avatar">AR</span><span class="avatar">NA</span><span class="avatar">RF</span><span class="avatar">+40</span></div></div><div class="sticker" aria-hidden="true">✦</div></div></div></section>
+      <div class="stats"><div class="wrap stats-grid"><div class="stat"><strong>45+</strong><span>anggota aktif</span></div><div class="stat"><strong>12</strong><span>proyek bersama</span></div><div class="stat"><strong>4</strong><span>bidang eksplorasi</span></div><div class="stat"><strong>2023</strong><span>mulai berkarya</span></div></div></div>
+      <section id="tentang" class="wrap"><div class="section-head"><div><p class="eyebrow">Apa yang kami percaya</p><h2>Bukan sekadar klub.<br />Ini tempat pulang untuk ide.</h2></div><p class="section-text">Kami membangun lingkungan yang ramah untuk mencoba hal baru, bertanya tanpa ragu, dan mengubah rasa penasaran menjadi karya nyata.</p></div><div class="values"><article class="value"><div class="value-icon">✦</div><h3>Berani mencoba</h3><p>Eksperimen adalah bagian dari proses. Di sini, kesalahan selalu bisa jadi awal pembelajaran.</p></article><article class="value"><div class="value-icon">⌘</div><h3>Tumbuh bersama</h3><p>Kami saling berbagi ilmu, memberi umpan balik, dan merayakan setiap kemajuan kecil.</p></article><article class="value"><div class="value-icon">↗</div><h3>Bikin dampak</h3><p>Dari konten kreatif hingga aplikasi sederhana, kami membuat hal yang berguna bagi sekitar.</p></article></div></section>
+      <section id="agenda" class="calendar"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Sedang berlangsung</p><h2>Ada cerita baru<br />setiap pekan.</h2></div><a class="button" href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Lihat semua agenda ↗</a></div><div class="events"><article class="event-main"><p class="event-date mono">16 Agustus · 13.00 WIB</p><h3>Creative Tech Meetup #04</h3><p>Ngobrol santai, berbagi proyek, dan eksplorasi ide digital bersama seluruh anggota.</p></article><div class="event-list"><div class="event-row"><div class="date-box">AUG<b>21</b></div><div><h4>Workshop: Dasar UI Design</h4><p>Lab komputer · 13.00 WIB</p></div></div><div class="event-row"><div class="date-box">AUG<b>28</b></div><div><h4>Ngoding Bareng</h4><p>Ruang ICT · 13.00 WIB</p></div></div><div class="event-row"><div class="date-box">SEP<b>04</b></div><div><h4>Content Planning Session</h4><p>Ruang multimedia · 13.00 WIB</p></div></div></div></div></div></section>
+      <section id="anggota" class="wrap"><div class="section-head"><div><p class="eyebrow">Wajah di balik komunitas</p><h2>Datang dengan minat,<br />pulang membawa teman.</h2></div><p class="section-text">Setiap anggota membawa perspektif berbeda. Itu yang membuat komunitas ini hidup.</p></div><div class="members"><article class="member"><div class="portrait">A</div><h3>Alya Ramadhani</h3><p>Design &amp; content</p></article><article class="member"><div class="portrait">R</div><h3>Rafi Pratama</h3><p>Web development</p></article><article class="member"><div class="portrait">N</div><h3>Nadia Putri</h3><p>Creative media</p></article><article class="member"><div class="portrait">F</div><h3>Fajar Maulana</h3><p>Programming</p></article></div></section>
     </main>
-
-    <footer class="border-top py-4 text-center text-secondary">
-      <small>&copy; 2026 ICT Dua Cikbar. Berkarya dengan teknologi.</small>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <footer id="gabung"><div class="wrap"><div class="footer-top"><div><p class="mono">Siap membuat sesuatu bersama?</p><p class="footer-title">Mari isi perjalanan digitalmu dengan karya yang berarti.</p></div><div class="social"><a href="https://www.instagram.com/ictduacikbar/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="belajar-html-dasar.html">Mulai belajar ↗</a></div></div><div class="copyright">© 2026 ICT Dua Cikbar · Berkarya bersama teknologi.</div></div></footer>
   </body>
 </html>
